@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <AnchorPane prefHeight="600.0" prefWidth="350.0">
+        <Button layoutX="265.0" layoutY="570.0" mnemonicParsing="false" onAction="#sendButton"  prefHeight="25.0"
+                prefWidth="83.0" text="Отправить"/>
+        <TextField fx:id="textField" onKeyPressed="#keyListener"
+                   layoutX="11.0" layoutY="570.0" prefHeight="25.0" prefWidth="249.0" />
+        <TextArea fx:id="textArea"
+                  layoutX="11.0" layoutY="14.0" prefHeight="547.0" prefWidth="334.0">
+           <font>
+               <Font size="17.0"/>
+           </font>
+        </TextArea>
+    </AnchorPane>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
